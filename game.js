@@ -54,7 +54,6 @@ function updateCounts() {
         }
         else return totals;
      }
-displayTotals(total);
 }
 
 function displayTotals (totals) {
