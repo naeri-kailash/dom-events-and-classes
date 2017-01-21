@@ -42,18 +42,18 @@ function updateCounts() {
       green: 0,
       invisible: 0
     }
-     for (var i = 0; i <= (dots.length); i++) {
+     for (var i = 0; i < dots.length; i++) {
         if (dots[i].classList.contains('blue')) {
-           return totals.blue++;
+            totals.blue++;
         }
-        else if (dots[i].classList.contains('green')) {
-           return totals.green++;
+         if (dots[i].classList.contains('green')) {
+           totals.green++;
         }
-        else if (dots[i].classList.contains('invisible')) {
-           return totals.invisible++;
+         if (dots[i].classList.contains('invisible')) {
+            totals.invisible++;
         }
-        else return totals;
      }
+  displayTotals(totals);
 }
 
 function displayTotals (totals) {
